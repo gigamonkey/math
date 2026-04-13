@@ -1,0 +1,7 @@
+*.md
+*.txt
+*~
+.git
+.gitignore
+.sync-ignore
+Makefile
