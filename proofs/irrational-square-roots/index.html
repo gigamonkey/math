@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Irrationality of Non-Perfect Square Roots</title>
-  <script>
-    MathJax = {
-      tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] }
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-  <link rel="stylesheet" href="../../style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrationality of Non-Perfect Square Roots</title>
+    <script>
+      MathJax = {
+        tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+  <body>
 
-  <p><a class="nav" href="../../">←</a></p>
+    <p><a class="nav" href="../../">←</a></p>
 
-  <p><time datetime="2026-04-11">April 11, 2026</time></p>
+    <section>
+      <p><time datetime="2026-04-11">April 11, 2026</time></p>
 
-  <h1>Irrationality of Non-Perfect Square Roots</h1>
+      <h1>Irrationality of Non-Perfect Square Roots</h1>
 
-  <div class="theorem">
-    <span class="theorem-label">Theorem.</span>
-    Let $n$ be a positive integer that is not a perfect square. Then $\sqrt{n}$ is irrational.
-  </div>
+      <div class="theorem">
+        <span class="theorem-label">Theorem.</span>
+        Let $n$ be a positive integer that is not a perfect square. Then $\sqrt{n}$ is irrational.
+      </div>
 
-  <div class="proof">
-    <p>
-      <span class="proof-label">Proof.</span> Suppose for contradiction that
-      $\sqrt{n} = \frac{a}{b}$ with $a, b \in \mathbb{Z}$, $b \neq 0$, and
-      $\gcd(a, b) = 1$. Then $n b^2 = a^2$, so $n \mid a^2$.
-    </p>
+      <div class="proof">
+        <p>
+          <span class="proof-label">Proof.</span> Suppose for contradiction that
+          $\sqrt{n} = \frac{a}{b}$ with $a, b \in \mathbb{Z}$, $b \neq 0$, and
+          $\gcd(a, b) = 1$. Then $n b^2 = a^2$, so $n \mid a^2$.
+        </p>
 
-    <p>
-      Since $n$ is not a perfect square, write $n = m^2 d$ where $d > 1$ is
-      square-free. Then $d \mid a^2 \Rightarrow d \mid a$ (since $d$ is
-      square-free). Let $c = a/d$ and substitute:
-    </p>
+        <p>
+          Since $n$ is not a perfect square, write $n = m^2 d$ where $d > 1$ is
+          square-free. Then $d \mid a^2 \Rightarrow d \mid a$ (since $d$ is
+          square-free). Let $c = a/d$ and substitute:
+        </p>
 
-    $$m^2 d \cdot b^2 = (cd)^2 \quad \Longrightarrow \quad m^2 b^2 = d c^2$$
+        $$m^2 d \cdot b^2 = (cd)^2 \quad \Longrightarrow \quad m^2 b^2 = d c^2$$
 
-    <p>
-      Let $p$ be a prime factor of $d$. Since $p \mid m^2 b^2$, we have $p \mid
-      m$ or $p \mid b$, so the $p$-adic valuation of the left-hand side is even.
-      But on the right-hand side, $d$ is square-free, contributing exactly one
-      factor of $p$, while $c^2$ contributes an even number. Thus the $p$-adic
-      valuation of the right-hand side is odd.
-    </p>
+        <p>
+          Let $p$ be a prime factor of $d$. Since $p \mid m^2 b^2$, we have $p \mid
+          m$ or $p \mid b$, so the $p$-adic valuation of the left-hand side is even.
+          But on the right-hand side, $d$ is square-free, contributing exactly one
+          factor of $p$, while $c^2$ contributes an even number. Thus the $p$-adic
+          valuation of the right-hand side is odd.
+        </p>
 
-    <p>
-      This is a contradiction, so $\sqrt{n} \notin \mathbb{Q}$.
-    </p>
+        <p>
+          This is a contradiction, so $\sqrt{n} \notin \mathbb{Q}$.
+        </p>
 
-    <span class="qed">$\blacksquare$</span>
-  </div>
-
-</body>
+        <span class="qed">$\blacksquare$</span>
+      </div>
+    </section>
+  </body>
 </html>

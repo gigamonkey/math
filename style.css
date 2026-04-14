@@ -1,10 +1,17 @@
+html {
+  background: #aaa;
+}
+
 body {
-  max-width: 680px;
-  margin: 2em auto;
+  width: 40em;
+  margin: 1em auto;
+  height: 100%;
   font-family: Georgia, serif;
   line-height: 1.8;
-  padding: 0 1em;
+  padding: 1em 2em;
   color: #222;
+  background: #ccd;
+  border-radius: 0.5em;
 }
 
 h1 { font-size: 1.8em; }
@@ -41,4 +48,11 @@ p:has(> time:first-child:last-child) {
 .qed {
   float: right;
   margin-top: -1.2em;
+}
+
+section {
+  background: #efeff2;
+  padding: 2em;
+  margin: 1.5em;
+  border-radius: 0.5em;
 }

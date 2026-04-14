@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Irrationality of Non-Perfect Square Roots</title>
-  <script>
-    MathJax = {
-      tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] }
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-  <link rel="stylesheet" href="../../style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrationality of Non-Perfect Square Roots</title>
+    <script>
+      MathJax = {
+        tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+  <body>
 
-  <p><a class="nav" href="../../">←</a></p>
+    <p><a class="nav" href="../../">←</a></p>
 
-  <p><time datetime="2026-04-11">April 12, 2026</time></p>
+    <section>
+      <p><time datetime="2026-04-11">April 12, 2026</time></p>
 
-  <h1>Irrationality of roots of non-perfect powers</h1>
+      <h1>Irrationality of roots of non-perfect powers</h1>
 
-  <div class="theorem">
-    <span class="theorem-label">Theorem.</span> Let $m$ be a positive integer
-    $\notin \{k^n \mid k \in \mathbb{Z}\}$ and $n \in \mathbb{Z}_{\ge 2}$. Then
-    $\sqrt[n]{m}$ is irrational.
-  </div>
+      <div class="theorem">
+        <span class="theorem-label">Theorem.</span> Let $m$ be a positive integer
+        $\notin \{k^n \mid k \in \mathbb{Z}\}$ and $n \in \mathbb{Z}_{\ge 2}$. Then
+        $\sqrt[n]{m}$ is irrational.
+      </div>
 
-  <div class="proof">
-    <p>
-      <span class="proof-label">Proof.</span> Suppose for contradiction that
-      $\sqrt[n]{m} = \frac{a}{b}$ with $a, b \in \mathbb{Z}$, $b \neq 0$.
-    </p>
+      <div class="proof">
+        <p>
+          <span class="proof-label">Proof.</span> Suppose for contradiction that
+          $\sqrt[n]{m} = \frac{a}{b}$ with $a, b \in \mathbb{Z}$, $b \neq 0$.
+        </p>
 
-    <p>
-      Note that because $m \notin \{k^n \mid k \in \mathbb{Z}\}$ there must be
-      at least one prime factor of $m$, $p$, where $n \nmid \nu_p(m)$. Let $q =
-      \nu_p(m)$.
-    </p>
+        <p>
+          Note that because $m \notin \{k^n \mid k \in \mathbb{Z}\}$ there must be
+          at least one prime factor of $m$, $p$, where $n \nmid \nu_p(m)$. Let $q =
+          \nu_p(m)$.
+        </p>
 
-    <p>
-      Rewrite our assumption as $b^n m = a^n$. This gives us $\nu_p(b^n m) =
-      \nu_p(a^n)$. And $\nu_p(a^n) = n \cdot \nu_p(a)$, i.e. $n \mid
-      \nu_p(a^n)$.
-    </p>
+        <p>
+          Rewrite our assumption as $b^n m = a^n$. This gives us $\nu_p(b^n m) =
+          \nu_p(a^n)$. And $\nu_p(a^n) = n \cdot \nu_p(a)$, i.e. $n \mid
+          \nu_p(a^n)$.
+        </p>
 
-    <p>
-      However, $\nu_p(b^n) = n \cdot \nu_p(b)$ so $\nu_p(b^nm) = nk + q$ where
-      $k = \nu_p(b)$.
-    </p>
+        <p>
+          However, $\nu_p(b^n) = n \cdot \nu_p(b)$ so $\nu_p(b^nm) = nk + q$ where
+          $k = \nu_p(b)$.
+        </p>
 
-    <p>
-      Since $n \nmid q$, $n \nmid (nk + q)$. So we have $b^n m = a^n$ and yet $n
-      \nmid \nu_p(b^n m)$ while $n \mid \nu_p(a^n)$. Thus we have a
-      contradiction and $\sqrt[n]{m}$ must be irrational.
-    </p>
+        <p>
+          Since $n \nmid q$, $n \nmid (nk + q)$. So we have $b^n m = a^n$ and yet $n
+          \nmid \nu_p(b^n m)$ while $n \mid \nu_p(a^n)$. Thus we have a
+          contradiction and $\sqrt[n]{m}$ must be irrational.
+        </p>
 
-    <span class="qed">$\blacksquare$</span>
-  </div>
+        <span class="qed">$\blacksquare$</span>
+      </div>
+    </section>
 
-</body>
+  </body>
 </html>
