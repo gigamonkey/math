@@ -60,7 +60,7 @@ p:has(> time:first-child:last-child) {
 section {
   background: #efeff2;
   padding: 2em;
-  margin: 1.5em;
+  margin: 0 1.5em 1.5em;
   border-radius: 0.5em;
 }
 
@@ -89,6 +89,11 @@ ul.toolbar {
     padding: 0.5em;
     display: flex;
     align-items: center;
+  }
+
+  > li:has([aria-current="page"]) {
+    background: #002080;
+    /* font-weight: 700; */
   }
 
   > li * {
