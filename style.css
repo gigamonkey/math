@@ -56,3 +56,31 @@ section {
   margin: 1.5em;
   border-radius: 0.5em;
 }
+
+ul.toolbar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 0.25em;
+  align-items: stretch;
+  margin: 1em 1.5em;
+  padding: 0;
+
+  > li {
+    background: blue;
+    color: white;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+
+  > li * {
+    margin: 0;
+    line-height: 1;
+    color: inherit;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
