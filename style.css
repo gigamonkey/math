@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  width: 40em;
+  max-width: 40em;
   margin: 1em auto;
   height: 100%;
   font-family: "Crimson Pro", serif;
@@ -69,6 +69,7 @@ ul.toolbar {
   font-family: "DM Sans";
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
   gap: 0.25em;
   align-items: stretch;
