@@ -29,10 +29,6 @@ h3 { font-size: 1.1em; }
 dt { font-weight: bold; margin-top: 1em; }
 dd { margin-left: 1.5em; }
 
-a.nav {
-  text-decoration: none;
-}
-
 p:has(> time:first-child:last-child) {
   text-align: right;
 }
@@ -65,7 +61,7 @@ section {
   border-radius: 0.5em;
 }
 
-ul.toolbar {
+nav ul {
   font-family: "DM Sans";
   display: flex;
   flex-direction: row;
@@ -109,7 +105,7 @@ ul.toolbar {
   }
 }
 
-div.nav {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -133,7 +129,7 @@ div.nav {
     padding: 1em;
   }
 
-  div.nav {
+  nav {
     position: relative;
   }
 
@@ -143,18 +139,17 @@ div.nav {
     cursor: pointer;
   }
 
-  div.nav > ul.toolbar {
+  nav > ul {
     display: none;
   }
 
-  .menu-toggle:checked ~ ul.toolbar {
+  .menu-toggle:checked ~ ul {
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 1.75em;
     z-index: 10;
-    margin: 0.25em 0 0;
     gap: 0;
   }
 }
