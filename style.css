@@ -116,12 +116,8 @@ div.nav {
   align-items: center;
 }
 
-details.menu summary {
+.menu-button {
   display: none;
-}
-
-details.menu > ul {
-  display: flex;
 }
 
 @media (max-width: 600px) {
@@ -137,26 +133,21 @@ details.menu > ul {
     padding: 1em;
   }
 
-  details.menu {
+  div.nav {
     position: relative;
   }
 
-  details.menu summary {
+  .menu-button {
     display: block;
     font-size: 1.5em;
     cursor: pointer;
-    list-style: none;
   }
 
-  details.menu summary::-webkit-details-marker {
+  div.nav > ul.toolbar {
     display: none;
   }
 
-  details.menu > ul {
-    display: none;
-  }
-
-  details.menu[open] > ul {
+  .menu-toggle:checked ~ ul.toolbar {
     display: flex;
     flex-direction: column;
     position: absolute;
